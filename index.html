@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Daily Quote Widget</title>
+  <meta name="theme-color" content="#0ea5e9" />
+  <link rel="preconnect" href="https://api.quotable.io">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="wrap">
+    <section class="card" aria-live="polite">
+      <div class="icon" aria-hidden="true">❝</div>
+      <p id="quote" class="quote">Loading…</p>
+      <p id="author" class="author"> </p>
+
+      <div class="actions">
+        <button id="refresh" title="Get a new quote">↻ New</button>
+        <button id="copy" title="Copy to clipboard">📋 Copy</button>
+        <button id="share" title="Share">🔗 Share</button>
+      </div>
+      <small class="hint">Shows one quote per day. Data from <a href="https://api.quotable.io" target="_blank" rel="noreferrer">Quotable</a>.</small>
+    </section>
+  </main>
+
+  <noscript>This widget needs JavaScript enabled.</noscript>
+  <script src="script.js" defer></script>
+</body>
+</html>
